@@ -25,7 +25,7 @@ myRun = do
   let port = 3000
       settings =
         setPort port $
-        setBeforeMainLoop (hPutStrLn stderr ("listening on port " ++ show port)) $
+        setBeforeMainLoop (hPutStrLn stderr ("Hello -> listening on port " ++ show port)) $
         defaultSettings
   runSettings settings =<< mkApp
 
